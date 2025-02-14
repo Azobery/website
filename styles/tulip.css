@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.tulip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stem {
+    width: 2vmin;
+	height: 20vmin;
+	background-color: #093;
+    border-radius: 1vmin;
+    position: absolute;
+}
+
+.leaf {
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 0 100px;
+    background-color: #32CD32;
+    position: absolute;
+}
+
+.leaf.left {
+    right: 0vmin;
+    top: -8vmin;
+}
+
+.leaf.right {
+    left: 0vmin;
+    top: -8vmin;
+    transform: rotate(90deg);
+}
+
+.petal {
+    width: 12vmin;
+    height: 12vmin;
+    background: dodgerblue;
+    position: absolute;
+    border-radius: 100% 0% 60% 40% / 60% 0% 100% 40%;
+}
+
+.petal.left {
+    transform: rotate(-60deg);
+    background: rgb(218, 46, 46);
+    left: -8vmin;
+    top: -19vmin;
+    z-index: 1;
+}
+
+.petal.center {
+    transform: rotate(-45deg);
+    background: rgb(218, 77, 77);
+    top: -20vmin;
+}
+
+.petal.right {
+    transform: rotate(-30deg);
+    background: rgb(224, 61, 61);
+    right: -8vmin;
+    top: -19vmin;
+}
+
+/* .petal::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: 0.5;
+} */
